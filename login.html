@@ -71,22 +71,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#loginForm').submit(function(e) {
-                e.preventDefault();
-                var employeeId = $('#employeeId').val();
-                var password = $('#password').val();
-                // Dummy authentication
-                if (employeeId === '2599' && password === '2599') {
-                    localStorage.setItem('loggedIn', 'true');
-                    localStorage.setItem('employeeName', 'Raj Varma');
-                    window.location.href = 'index.html';
-                } else {
-                    alert('Invalid credentials');
-                }
-            });
-        });
-    </script>
+    <script src="login.js"></script>
 </body>
 </html>
