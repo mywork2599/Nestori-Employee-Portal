@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestori - Employee Settings</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">Nestori</a>
+                <div class="navbar-nav ml-auto">
+                    <span class="navbar-text">Employee Portal</span>
+                    <div class="dropdown" id="userMenu">
+                        <button class="btn btn-outline-success ml-3 dropdown-toggle" type="button" id="userBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Employee Login
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="userBtn">
+                            <a class="dropdown-item" href="#" id="logoutBtn">Logout</a>
+                            <a class="dropdown-item" href="#" id="helpBtn">Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="mb-4">Employee Portal</h4>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="index.html"><i class="fas fa-chart-line"></i> Overview</a>
+            <a class="nav-link" href="landlords.html"><i class="fas fa-building"></i> Landlords</a>
+            <a class="nav-link" href="properties.html"><i class="fas fa-home"></i> Properties</a>
+            <a class="nav-link" href="tenants.html"><i class="fas fa-users"></i> Tenants</a>
+            <a class="nav-link" href="leases.html"><i class="fas fa-file-contract"></i> Leases</a>
+            <a class="nav-link" href="roommates.html"><i class="fas fa-user-friends"></i> Roommates</a>
+            <a class="nav-link" href="support.html"><i class="fas fa-headset"></i> Support</a>
+            <a class="nav-link" href="communication.html"><i class="fas fa-comments"></i> Communication</a>
+            <a class="nav-link" href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a>
+            <a class="nav-link" href="documents.html"><i class="fas fa-folder"></i> Documents</a>
+            <a class="nav-link" href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h1 class="mb-4"><i class="fas fa-cog"></i> Employee Settings</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Settings</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="employeeName">Name</label>
+                                    <input type="text" class="form-control" id="employeeName" value="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeeEmail">Email</label>
+                                    <input type="email" class="form-control" id="employeeEmail" value="john.doe@nestori.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeePhone">Phone</label>
+                                    <input type="tel" class="form-control" id="employeePhone" value="(123) 456-7890">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Security Settings</h5>
+                            <form>
+                                <div class="form-group">
+                                    <label for="currentPassword">Current Password</label>
+                                    <input type="password" class="form-control" id="currentPassword">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newPassword">New Password</label>
+                                    <input type="password" class="form-control" id="newPassword">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmPassword">Confirm New Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Change Password</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Preferences</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="theme">Theme</label>
+                            <select class="form-control" id="theme">
+                                <option value="light">Light</option>
+                                <option value="dark">Dark</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <select class="form-control" id="language">
+                                <option value="en">English</option>
+                                <option value="es">Spanish</option>
+                                <option value="fr">French</option>
+                            </select>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="notifications" checked>
+                            <label class="form-check-label" for="notifications">
+                                Enable email notifications
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Preferences</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>© 2025 Nestori. Internal Use Only.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Check login status
+            if (localStorage.getItem('loggedIn') === 'true') {
+                var employeeName = localStorage.getItem('employeeName');
+                $('#userBtn').text(employeeName);
+            } else {
+                window.location.href = 'login.html';
+            }
+
+            $('#logoutBtn').click(function() {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('employeeName');
+                window.location.href = 'login.html';
+            });
+
+            $('#helpBtn').click(function() {
+                alert('Help: Contact support at support@nestori.com');
+            });
+        });
+    </script>
+</body>
+</html>
