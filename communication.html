@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestori - Communication</title>
+    <link rel="icon" type="image/x-icon" href="favicon_Nestori/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_Nestori/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_Nestori/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_Nestori/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon_Nestori/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon_Nestori/android-chrome-512x512.png">
+    <link rel="manifest" href="favicon_Nestori/site.webmanifest">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="communication.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">Nestori</a>
+                <div class="navbar-nav ml-auto">
+                    <span class="navbar-text">Employee Portal</span>
+                    <div class="dropdown" id="userMenu">
+                        <button class="btn btn-outline-success ml-3 dropdown-toggle" type="button" id="userBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Employee Login
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="userBtn">
+                            <a class="dropdown-item" href="#" id="logoutBtn">Logout</a>
+                            <a class="dropdown-item" href="#" id="helpBtn">Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="mb-4">Employee Portal</h4>
+        <nav class="nav flex-column">
+            <a class="nav-link" href="index.html"><i class="fas fa-chart-line"></i> Overview</a>
+            <a class="nav-link" href="landlords.html"><i class="fas fa-building"></i> Landlords</a>
+            <a class="nav-link" href="properties.html"><i class="fas fa-home"></i> Properties</a>
+            <a class="nav-link" href="tenants.html"><i class="fas fa-users"></i> Tenants</a>
+            <a class="nav-link" href="leases.html"><i class="fas fa-file-contract"></i> Leases</a>
+            <a class="nav-link" href="roommates.html"><i class="fas fa-user-friends"></i> Roommates</a>
+            <a class="nav-link" href="support.html"><i class="fas fa-headset"></i> Support</a>
+            <a class="nav-link" href="communication.html"><i class="fas fa-comments"></i> Communication</a>
+            <a class="nav-link" href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a>
+            <a class="nav-link" href="documents.html"><i class="fas fa-folder"></i> Documents</a>
+            <a class="nav-link" href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <h1 class="mb-4"><i class="fas fa-comments"></i> Communication</h1>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Internal Communication Tools</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Team Messaging</h6>
+                            <p>Communicate with other employees.</p>
+                            <button class="btn btn-info">Open Team Chat</button>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Customer Outreach</h6>
+                            <p>Send announcements to customers.</p>
+                            <button class="btn btn-info">Create Announcement</button>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Notifications</h6>
+                            <p>Manage system alerts.</p>
+                            <button class="btn btn-info">View Notifications</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Messages</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Sender</th>
+                                    <th>Subject</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>Property Update</td>
+                                    <td>2023-10-01</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>Lease Renewal</td>
+                                    <td>2023-09-30</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white">
+        <div class="container text-center">
+            <span>© 2025 Nestori. Internal Use Only.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Check login status
+            if (localStorage.getItem('loggedIn') === 'true') {
+                var employeeName = localStorage.getItem('employeeName');
+                $('#userBtn').text(employeeName);
+            } else {
+                window.location.href = 'login.html';
+            }
+
+            $('#logoutBtn').click(function() {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('employeeName');
+                window.location.href = 'login.html';
+            });
+
+            $('#helpBtn').click(function() {
+                alert('Help: Contact support at support@nestori.com');
+            });
+        });
+    </script>
+</body>
+</html>
