@@ -167,26 +167,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Check login status
-            if (localStorage.getItem('loggedIn') === 'true') {
-                var employeeName = localStorage.getItem('employeeName');
-                $('#userBtn').text(employeeName);
-            } else {
-                window.location.href = 'login.html';
-            }
-
-            $('#logoutBtn').click(function() {
-                localStorage.removeItem('loggedIn');
-                localStorage.removeItem('employeeName');
-                window.location.href = 'login.html';
-            });
-
-            $('#helpBtn').click(function() {
-                alert('Help: Contact support at support@nestori.com');
-            });
-        });
-    </script>
+    <script src="support.js"></script>
 </body>
 </html>
